@@ -4,13 +4,13 @@ export const getStudents = async () => {
   const res = await fetch(`${API_BASE}/students`);
   if (!res.ok) throw new Error('Failed to fetch students');
   return res.json();
-}
+};
 
-export const getStats = async() => {
+export const getStats = async () => {
   const res = await fetch(`${API_BASE}/stats`);
   if (!res.ok) throw new Error('Failed to load stats');
   return res.json();
-}
+};
 
 export const createStudent = async (student) => {
   const res = await fetch(`${API_BASE}/students`, {
