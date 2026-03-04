@@ -30,7 +30,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "8080:8080"
+      - "8080:80"
 
   automark:
     build: ./automark
